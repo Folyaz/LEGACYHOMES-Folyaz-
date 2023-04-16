@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.site {
+  font-family: "Montserrat", sans-serif;
+  width: 1200px;
+  height: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.logo a {
+  font-size: 50px;
+}
+.nav a {
+  font-size: 13px;
+  text-decoration: none;
+  color: rgb(108, 108, 108);
+  padding: 15px;
+  margin: 10px;
+}
+.nav a:hover {
+  color: black;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.nav {
+  margin-left: 150px;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+.sing {
+  display: flex;
+  justify-content: space-between;
+}
+.sing a {
+  padding: 5;
+  color: black;
+  font-weight: 600;
+}
+.sing a:hover {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  transition: 0.8s;
+}
+.logo a {
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+.singin a {
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+}
+.singup a {
+  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+}
+.title-site {
+  margin: 50px 0 25px 0;
+  text-align: center;
+}
+.title-site h1 {
+  font-size: 45px;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.title-site p {
+  font-size: 14px;
+  color: rgb(108, 108, 108);
+}
+.cards {
+  display: grid;
+  grid-template-columns: 380px 380px 380px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.card {
+  border: 1.5px solid rgb(144, 144, 144);
+  width: 380px;
+  height: 400px;
+  padding: 30px 10px;
+  background-color: white;
+}
+.card:hover {
+  box-shadow: 1px 1px 2px 2px rgb(0, 0, 0);
+  border: 1px solid rgb(145, 145, 145);
+  transition: 1s;
+}
+.title-card {
+  color: rgb(108, 108, 108);
+  font-size: 25px;
+}
+
+.info-card {
+  margin-top: 10px;
+  font-size: 15px;
+  color: rgb(108, 108, 108);
+}
+.works {
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+}
+.works h3 {
+  font-size: 45px;
+}
+.works p {
+  color: rgb(108, 108, 108);
+  margin-top: 10px;
+  font-size: 15px;
+}
+.cards img {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+}
+@media screen and (max-width: 400px) {
+  .site {
+    width: 360px;
+    height: 3300px;
+  }
+  .header {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo a {
+    font-size: 30px;
+  }
+  .nav {
+    margin: 0 auto;
+  }
+  .nav a {
+    font-size: 10px;
+  }
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav li {
+    margin-bottom: 5px;
+  }
+  .sing {
+    margin-top: 10px;
+  }
+  .sing a {
+    font-size: 13px;
+  }
+  .singup a {
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+  }
+  .singin a {
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-site {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+  }
+  .title-site h1 {
+    font-size: 25px;
+  }
+  .title-site p {
+    width: 350px;
+    margin: 0 auto;
+    font-size: 10px;
+  }
+  .cards {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+  }
+  .works {
+    width: 350px;
+  }
+  .works h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .works p {
+    width: 350px;
+    margin: 0 auto;
+    font-size: 10px;
+  }
+}
